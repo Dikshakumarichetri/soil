@@ -33,3 +33,48 @@ h1{
   list-style-type: none;
   padding: 0;
 }
+/* team page css */
+
+.our-team-box {
+  border-radius: 10px;
+  padding:50px;
+  background-color: #00008b; /* Blue background */
+  overflow: hidden; /* Prevent overflow */
+  position: relative; /* Positioning context for child elements */
+}
+
+.content-right{
+  color: white;
+}
+.color-white{
+  color:white;
+}
+.padding-top{
+  padding-top: 50px;
+}
+.move-down {
+  transform: translateY(50px); /* Move the box down by 50px */
+  transition: transform 0.3s ease; /* Optional: Add a transition effect for smoothness */
+}
+
+.team-section .team-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.team-section .card-body {
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .team-section .team-img {
+    width: 120px;
+    height: 120px;
+  }
+  .move-down {
+    transform: none !important; /* Move the box down by 50px */
+  }
+}
