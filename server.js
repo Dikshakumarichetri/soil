@@ -3,13 +3,17 @@ const bodyParser = require('body-parser');
 const AWS = require('aws-sdk');
 const app = express();
 const port = 3000;
+require('dotenv').config();
 
+// Access your AWS credentials from the environment variables
+const AWS_ACCESS_KEY_ID = process.env.AWS_ACCESS_KEY_ID;
+const AWS_SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY;
 app.use(bodyParser.json());  // Parse JSON request bodies
 
 // AWS S3 Configuration
 const s3 = new AWS.S3({
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID, // Replace with your AWS Access Key ID
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,// Replace with your AWS Secret Access Key
+    accessKeyId: AWS_ACCESS_KEY_ID, // Replace with your AWS Access Key ID
+    secretAccessKey: AWS_SECRET_ACCESS_KEY,// Replace with your AWS Secret Access Key
     region: 'ap-southeast-2' // Replace with your S3 bucket region
 });
 
