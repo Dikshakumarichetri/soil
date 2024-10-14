@@ -8,9 +8,8 @@ app.use(bodyParser.json());  // Parse JSON request bodies
 
 // AWS S3 Configuration
 const s3 = new AWS.S3({
-
-    accessKeyId: 'AKIAUGO4K2AQADLMMJKI', // Replace with your AWS Access Key ID
-    secretAccessKey: 'h0OGZM98RE3Qj1CxqsMQqh5k4Wjvy5bSHc8VgZ3S',// Replace with your AWS Secret Access Key
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID, // Replace with your AWS Access Key ID
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,// Replace with your AWS Secret Access Key
     region: 'ap-southeast-2' // Replace with your S3 bucket region
 });
 

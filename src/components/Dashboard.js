@@ -53,14 +53,7 @@ const Dashboard = () => {
           <Bar data={data} options={options} />
         </div>
       </div>
-      <div className="navigation">
-        <h2>Quick Links</h2>
-        <ul>
-          {['soil-data', 'reports', 'settings'].map(link => (
-            <li key={link}><Link to={`/${link}`}>View {link.replace('-', ' ')}</Link></li>
-          ))}
-        </ul>
-      </div>
+     
     </div>
   );
 };
