@@ -6,6 +6,7 @@ import SoilDataList from './components/SoilDataList';
 import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Team from './components/Team';
+import Blog from './components/Blog';
 
 function App() {
   return (
@@ -14,8 +15,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Dashboard />}  />
-          <Route path="/SoilDataForm" component={SoilDataForm} />
-          <Route path="/SoilDataList" component={SoilDataList} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/our-team" element={<Team />} /> 
 
         </Routes>
