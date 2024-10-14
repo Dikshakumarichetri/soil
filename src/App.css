@@ -43,6 +43,24 @@ h1{
   position: relative; /* Positioning context for child elements */
 }
 
+.all-white {
+  background-color: white !important;
+}
+
+.navbar, .navbar a, .navbar-brand, .navbar-toggler, .navbar-toggler-icon {
+  color: white !important;
+  border-color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+}
+
+.navbar-toggler {
+  border: 1px solid white;
+}
+
+
 .content-right{
   color: white;
 }
@@ -53,7 +71,7 @@ h1{
   padding-top: 50px;
 }
 .move-down {
-  transform: translateY(50px); /* Move the box down by 50px */
+  transform: translateY(50px) !important; /* Move the box down by 50px */
   transition: transform 0.3s ease; /* Optional: Add a transition effect for smoothness */
 }
 
@@ -77,4 +95,8 @@ h1{
   .move-down {
     transform: none !important; /* Move the box down by 50px */
   }
+}
+.bg-blue{
+  background-color: #00008b !important; /* Blue background */
+
 }

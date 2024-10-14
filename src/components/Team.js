@@ -5,8 +5,8 @@ import "../App.css";
 function Team() {
   const teamMembers = [
     {
-      name: "John Doe",
-      role: "CEO",
+      name: "Manas Rawat",
+      role: "24004729",
       image: "https://via.placeholder.com/150",
       social: {
         linkedin: "#",
@@ -15,8 +15,8 @@ function Team() {
       }
     },
     {
-      name: "Jane Smith",
-      role: "CTO",
+      name: "Anfernee Alviar",
+      role: "22886082",
       image: "https://via.placeholder.com/150",
       social: {
         linkedin: "#",
@@ -25,8 +25,8 @@ function Team() {
       }
     },
     {
-      name: "Mike Johnson",
-      role: "Lead Developer",
+      name: " Melo Xue",
+      role: "23955182",
       image: "https://via.placeholder.com/150",
       social: {
         linkedin: "#",
@@ -35,8 +35,8 @@ function Team() {
       }
     },
     {
-      name: "Emily Davis",
-      role: "Project Manager",
+      name: "Wei Dai",
+      role: "24076678",
       image: "https://via.placeholder.com/150",
       social: {
         linkedin: "#",
@@ -61,16 +61,12 @@ function Team() {
                 key={index}
                 className="mb-4"
               >
-                <Card className={`h-100  p-3 text-center ${member.name === "Jane Smith" || member.name === "Emily Davis" ? "move-down" : ""}`}>
+                <Card className={`h-100  p-3 text-center ${member.name === "Anfernee Alviar" || member.name === "Wei Dai" ? "move-down" : ""}`}>
                   <Card.Img variant="top" src={member.image} alt={member.name} className="team-img" />
                   <Card.Body>
                     <Card.Title>{member.name}</Card.Title>
                     <Card.Text>{member.role}</Card.Text>
-                    <div className="d-flex justify-content-center">
-                      <Button variant="link" href={member.social.linkedin}>LinkedIn</Button>
-                      <Button variant="link" href={member.social.twitter}>Twitter</Button>
-                      <Button variant="link" href={member.social.facebook}>Facebook</Button>
-                    </div>
+                  
                   </Card.Body>
                 </Card>
               </Col>
@@ -87,7 +83,6 @@ function Team() {
               Each of our team members brings unique skills and experiences that help us innovate and excel in our industry. 
               Together, we aim to create lasting solutions for our customers.
             </p>
-            <Button variant="primary">Learn More</Button>
           </div>
         </Col>
       </Row>
